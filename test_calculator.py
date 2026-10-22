@@ -4,6 +4,10 @@ from calculator import add, subtract, multiply, divide
 def test_addition():
     assert add(10, 5) == 15
 
+
+def test_intentional_failure():
+    assert add(2,2) == 5
+
 def test_subtraction():
     assert subtract(10, 5) == 5
 
